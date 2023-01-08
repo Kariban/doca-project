@@ -1,0 +1,24 @@
+.docsForm {
+    grid-area: d;
+    background-color: white;
+    margin: 10px;
+    border: solid;
+    border-radius: 15px;
+    width: auto;
+}
+
+.header {
+    text-align: center;
+    margin: 10px;
+}
+
+.DivLabels {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 4fr;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid;
+}
+

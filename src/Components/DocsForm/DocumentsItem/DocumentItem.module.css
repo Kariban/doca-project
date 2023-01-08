@@ -1,0 +1,19 @@
+.DocINfo {
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 4fr;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.item {
+    padding: 5px;
+    border-collapse: collapse;
+    border: 1px solid;
+    float: left;
+}
+
+.itemBtn {
+    display: inline-block;
+}

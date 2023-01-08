@@ -1,0 +1,30 @@
+.fileUpload {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 2px black solid;
+    margin: 10px;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.inputFile {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    cursor: pointer;
+}
+
+.inputText {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    border: none;
+    background-color: gold;
+}
+
+.submitBtn {
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}

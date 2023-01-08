@@ -1,0 +1,17 @@
+.documentsView {
+    display: grid;
+    grid-template-columns: repeat(10,2fr);
+    margin: 10px;
+}
+.file {
+    border: 2px solid blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 10px;
+    text-align: center;
+}
+.buttons {
+    grid-column-start: 5;
+    display: inline-block;
+    position: static;
+}
