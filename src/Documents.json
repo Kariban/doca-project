@@ -1,0 +1,32 @@
+{
+    "documents": [{
+        "id": 1,
+        "name": "first",
+        "date": "01.01.2023",
+        "size": "123 kb"
+    },
+    {
+        "id": 2,
+        "name": "second",
+        "date": "01.01.2023",
+        "size": "124 kb"
+    },
+    {
+        "id": 3,
+        "name": "third",
+        "date": "01.01.2023",
+        "size": "120 kb"
+    },
+    {
+        "id": 4,
+        "name": "fours",
+        "date": "01.01.2023",
+        "size": "121 kb"
+    },
+    {
+        "id": 5,
+        "name": "fifth",
+        "date": "01.01.2023",
+        "size": "125 kb"
+    }]
+}
