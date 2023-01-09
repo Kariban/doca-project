@@ -7,7 +7,7 @@ const DocumentView = () => {
         <div className={style.documentsView}>
             <div className={style.file}>Document</div>
             <div className={style.buttons}>
-                <DeleteButton />
+                {/*<DeleteButton  id={1}/>*/}
                 <DownloadButton />
             </div>
            

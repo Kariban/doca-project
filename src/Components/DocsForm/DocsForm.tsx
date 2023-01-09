@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './DocsForm.module.css'
-import DocumentView from "./DocumentView/DocumentView";
 import Uploader from "./Uploader/Uploader";
 import DocumentList from "./DocumentsList/DocumentList";
+import AddButton from "../Buttons/AddButton/AddButton";
 
 const DocsForm = () => {
     return (
@@ -17,16 +17,9 @@ const DocsForm = () => {
                     <label>Size</label>
                     <label></label>
                 </div>
-                <DocumentList />
-            </div>
-
-            <div className={style.docsForm}>
-                <div className="Documents">
-                    <DocumentView/>
-                    <DocumentView/>
-                    <DocumentView/>
-                </div>
+                <DocumentList/>
                 <Uploader/>
+                <AddButton/>
             </div>
         </div>
     );
