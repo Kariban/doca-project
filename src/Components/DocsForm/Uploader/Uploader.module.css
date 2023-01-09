@@ -1,0 +1,12 @@
+.fileUpload {
+    display:grid;
+    grid-template-columns: 10fr 5fr;
+    padding: 10px;
+    text-align: center;
+}
+.UploadBtn {
+    width:50%
+}
+.inputFile {
+    
+}

@@ -1,7 +1,6 @@
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 import style from './AddButton.module.css'
 import AddDocuments from "../../../API/AddDocuments";
-import {IDocuments} from "../../../interface/Documents";
 
 
 const AddButton = () => {

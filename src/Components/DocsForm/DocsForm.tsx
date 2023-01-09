@@ -1,8 +1,6 @@
 import React from 'react';
 import style from './DocsForm.module.css'
-import Uploader from "./Uploader/Uploader";
 import DocumentList from "./DocumentsList/DocumentList";
-import AddButton from "../Buttons/AddButton/AddButton";
 
 const DocsForm = () => {
     return (
@@ -18,8 +16,6 @@ const DocsForm = () => {
                     <label></label>
                 </div>
                 <DocumentList/>
-                <Uploader/>
-                <AddButton/>
             </div>
         </div>
     );
