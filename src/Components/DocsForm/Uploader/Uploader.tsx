@@ -3,13 +3,13 @@ import style from './Uploader.module.css'
 import UploadService from "../../../Services/FileUploadService";
 import AddDocuments from "../../../API/AddDocuments";
 import {IDocuments} from "../../../interface/Documents";
-import {GetDocuments} from "../../../API/GetDocuments";
+import UpdateSize from "../../../Services/UpdateSize";
 
 interface IParams {
     updateDoc: () => Promise<IDocuments[]>;
 }
+
 const Uploader: React.FC<IParams> = ({updateDoc}) => {
-    const [list, setList] = useState<IDocuments[] | []>([]);
     const [currentFile, setCurrentFile] = useState<File>();
 
     const selectFile = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,17 +17,15 @@ const Uploader: React.FC<IParams> = ({updateDoc}) => {
         const selectedFiles = files as FileList;
         setCurrentFile(selectedFiles?.[0]);
     };
-    const RefreshDoc = async (): Promise<IDocuments[]> => {
-        const data = await GetDocuments()
-        setList(data);
-        return data;
-    }
+
     const upload = async () => {
         if (!currentFile) return;
+
+        let size = UpdateSize(currentFile);
         const documents = {
             name: currentFile.name,
-            size: currentFile.size,
-            date: currentFile.lastModified
+            size: size,
+            date: new Date(currentFile.lastModified).toLocaleString()
         };
         await AddDocuments(documents);
 

@@ -7,7 +7,7 @@ const addDoc = async (document: any) => {
         }
     })
 }
-const AddDocuments = async (document: { name: string; size: number; date: number; } | undefined) => {
+const AddDocuments = async (document: { name: string; size: string; date: string; } | undefined) => {
     let response = await addDoc(document);
     if (response.ok) {
         const result = await response.json();
