@@ -1,0 +1,16 @@
+{
+  "documents": [
+    {
+      "name": "string",
+      "date": "string",
+      "size": "string",
+      "id": 4
+    },
+    {
+      "name": "Снимок экрана_20221214_124038.png",
+      "size": 61883,
+      "date": 1671010838032,
+      "id": 5
+    }
+  ]
+}
